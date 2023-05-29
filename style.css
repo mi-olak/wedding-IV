@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-nav {
+  text-align: center;
+  background-image: url(images/artwork.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #f4f5fa;
+  border: 2px solid transparent;
+}
+.wallpaper {
+  margin-top: 60%;
+  background-color: #70789f;
+}
+.top-nav h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.top-nav h2 {
+  margin-top: 0%;
+  font-weight: 100;
+  font-size: 2rem;
+}
+.top-nav p {
+  margin-top: 2%;
+  font-weight: 1000;
+  padding-top: 4%;
+  font-size: 3rem;
+}
+
+.sub-main {
+  text-align: center;
+  background-color: #dec8f2;
+  padding: 3%;
+}
+.sub-main h2 {
+  margin-top: 15%;
+  margin-bottom: 8%;
+}
+.sub-main p {
+  font-size: 0.8rem;
+}
+.sub-main button {
+  margin-top: 5%;
+  padding: 2%;
+  background-color: black;
+  color: white;
+}
+.flower {
+  margin-top: 20%;
+  background-image: url(images/wedding\ 1.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#e0d7df;
+  margin-bottom: 10%;
+}
+.flower h3 {
+  font-size: 3rem;
+  padding: 20% 2% 25% 23%;
+  color: white;
+  margin-left: 45%;
+}
+.venue img {
+  width: 100%;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 10% 0%;
+  padding: 5% 0%;
+}
+.rsvp {
+  border: 1px solid transparent;
+  background-color: #70789f;
+}
+.rsvp h3 {
+  font-size: 2rem;
+  margin: 5% 0% 2% 0%;
+}
+.rsvp p {
+  font-size: 1rem;
+}
+.rsvp button {
+  padding: 3% 7%;
+  border: none;
+  margin-bottom: 5%;
+}
+.time div {
+  width: 50%;
+  padding: 3%;
+}
+.time p {
+  font-size: 1rem;
+  margin: 3%;
+}
+.sub-nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  background-color: #70789f;
+}
+.sub-nav a {
+  width: 25%;
+  text-decoration: none;
+  padding: 3% 2%;
+  color: black;
+}
+.sub-nav a:hover {
+  background-color: #876971;
+  color: white;
+}
+.container {
+  position: relative;
+  border: 1px solid black;
+  padding: 0.5%;
+  margin-bottom: 5%;
+}
+.container div {
+  padding: 0.5%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.wording button:hover,
+.rsvp button:hover {
+  background-color: #876971;
+  border: none;
+}
+.wallpaper h1:hover,
+.wallpaper h2:hover,
+.wallpaper p:hover {
+  color: #876971;
+}
+/* On smaller screens, decrease text size */
+@media (min-width: 700px) {
+  .sub-nav a {
+    padding: 1.2%;
+  }
+  .wallpaper {
+    padding-top: 1%;
+  }
+  .top-nav h1 {
+    padding-top: 2%;
+  }
+  .top-nav h2 {
+    font-size: 2rem;
+  }
+  .top-nav p {
+    padding-top: 3%;
+  }
+  .sub-main h2 {
+    margin-top: 7%;
+    font-size: 3rem;
+  }
+  .wording {
+    text-align: center;
+    margin: 0% 20%;
+  }
+  .flower {
+    margin-top: 6%;
+  }
+  .flower h3 {
+    font-size: 4rem;
+    padding-top: 1%;
+    padding: 10%;
+    margin-left: 65%;
+  }
+  .flower p {
+    padding-bottom: 15%;
+  }
+  .wedding h2 {
+    margin-top: 1%;
+    font-size: 2.5rem;
+  }
+  .venue {
+    margin: 0% 19%;
+  }
+  .time {
+    margin: 0% 15%;
+  }
+  .rsvp button {
+    padding: 1.5% 4.5%;
+  }
+}
+/* @media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  } */
